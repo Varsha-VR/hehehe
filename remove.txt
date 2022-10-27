@@ -1,0 +1,18 @@
+The git rm command can be used to remove individual files or a collection of files. The command can be used to undo the effects of git add and unstage changes you have previously added to the Staging area and can restore the deleted files.
+
+#Removing a file and then restoring
+$vim remove.txt
+$git status
+$git add remove.txt
+$git status 
+$git commit -m "remove.txt has been deleted and recovered!"
+$git log
+$git push -u origin main
+$rm remove.txt
+$git status
+$git checkout -- remove.txt
+$git status
+$git restore remove.txt
+$git status
+$ls -l
+
