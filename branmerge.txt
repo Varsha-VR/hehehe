@@ -1,0 +1,21 @@
+
+#Creating branch
+$ git checkout -b b1
+$ git branch
+
+#Switching to new branch
+$ git checkout main
+$ git branch
+$ git checkout b1
+$ vim branch.txt
+$ git add branch.txt
+$ git commit -m "File from b1 has been pushed to github!"
+$ git push -u origin b1
+
+#Merging branches
+$ git checkout main
+$ git branch
+$ git pull origin main
+$ git merge b1
+$ git push origin main
+
