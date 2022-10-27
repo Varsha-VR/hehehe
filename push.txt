@@ -1,2 +1,19 @@
 The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo.
 
+#Pushing a file to github
+$git status
+$git add push.txt
+$git status
+$git commit -m "push.txt has been successfully pushed!"
+$git log
+$git push -u origin main
+
+#Pushing a modified file to github
+$vim push.txt and modify the changes
+$git status
+$git add push.txt
+$git status
+$git commit -m "push.txt has been successfully modified!"
+$git log
+$git push -u origin main
+
